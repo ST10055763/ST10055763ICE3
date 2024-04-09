@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442239836298",
+    "project_id": "ice3-student-platform",
+    "storage_bucket": "ice3-student-platform.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442239836298:android:3006dc69c6556d93838d73",
+        "android_client_info": {
+          "package_name": "com.example.st10055763ice3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1sn11dBWgl2N-yHhP8W8b4pEAvwB9mVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

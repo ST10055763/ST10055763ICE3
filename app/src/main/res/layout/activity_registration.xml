@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="90dp"
+        android:fontFamily="serif-monospace"
+        android:text="Register"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRegisterExtra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtLNameReg"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtStudNoReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtFNameReg" />
+
+    <EditText
+        android:id="@+id/edtCPassR"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassR" />
+
+    <EditText
+        android:id="@+id/edtEmailR"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edtFNameReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnUserReg" />
+
+    <EditText
+        android:id="@+id/edtPassR"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edtCPassR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtQualificationReg" />
+
+    <EditText
+        android:id="@+id/edtStudNoReg"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Student Number"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtQualificationReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtLNameReg" />
+
+    <EditText
+        android:id="@+id/edtQualificationReg"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Qualification"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtStudNoReg" />
+
+    <EditText
+        android:id="@+id/edtFNameReg"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edtLNameReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailR" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="9dp"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toTopOf="@+id/tvHaveAccR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCPassR" />
+
+    <TextView
+        android:id="@+id/tvHaveAccR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="50dp"
+        android:text="Have an Account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvRetLogR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
+    <ImageButton
+        android:id="@+id/imgBtnUserReg"
+        android:layout_width="102dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="7dp"
+        android:contentDescription="Upload Image"
+        app:layout_constraintBottom_toTopOf="@+id/edtEmailR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegisterExtra"
+        android:scaleType="fitCenter"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvRegisterExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="9dp"
+        android:text="for The Student Platform"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtnUserReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
+
+    <TextView
+        android:id="@+id/tvRetLogR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="50dp"
+        android:text="Return to Login Here"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvHaveAccR"
+        app:layout_constraintTop_toBottomOf="@+id/btnReg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
